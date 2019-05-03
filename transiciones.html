@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Transiciones</title>
+	<style>
+		body{
+			width: 1024px;
+			margin: auto;
+		}
+		h1{
+			text-align: center;
+		}
+		h1.c1{
+			padding:80px;
+			text-shadow: 60px 60px 2px darkgrey, -60px -60px 2px darkgrey, -60px 60px 2px grey, 60px -60px 2px grey;
+			transition: 1s;
+		}
+		h1.c1:hover{
+			text-shadow: 60px -60px 2px grey, -60px 60px 2px grey, 60px 60px 2px darkgrey, -60px -60px 2px darkgrey;
+			transition: 1s;
+		}
+		h1.c2{
+			padding:80px;
+			text-shadow: 60px 60px 2px darkgrey, -60px -60px 2px darkgrey, -60px 60px 2px grey, 60px -60px 2px grey;
+			/* sin transition aquí vuelve al estado inicial de golpe, simulando un bucle */
+		}
+		h1.c2:hover{
+			text-shadow: 60px -60px 2px grey, -60px 60px 2px grey, 60px 60px 2px darkgrey, -60px -60px 2px darkgrey;
+			transition: 1s;
+		}
+		nav ul{
+			padding: 0;
+		}
+		nav li{
+			display: inline-block;
+			text-align: center;
+		}
+		nav a{
+			padding-top: 220px;
+			overflow: hidden;
+			display: inline-block;
+			font-family: verdana;
+			color: white;
+			text-decoration: none;
+			font-weight: bold;
+			height: 40px;
+			width: 200px;
+			background-image: url(pablo-monteserin.png);
+			background-repeat: no-repeat;
+			background-color: #ADADAD;
+			background-size: 100%;
+			background-position: 0 260px;
+			transition: 1s, background-position 3s;
+		}
+		nav a:hover{
+			background-position: 0 0px;
+			transition: 1s;
+			color: #D9D9D9;
+			font-size: 1.3em;
+			text-shadow: 0 0 5px black;
+		}
+		nav{
+			margin: auto;
+			text-align: center;
+			margin-bottom: 100px;
+		}
+		div.menu ul{
+			list-style: none;
+			position: relative;
+			width: 200px;
+			z-index: 1;
+			padding: 0;
+		}
+		div.menu a{
+			text-decoration: none;
+			color: white;
+			padding: 15px;
+			border-radius: 4px;
+			margin-bottom: 2px;
+			width: 200px;
+			display: block;
+			background-color: grey;
+		}
+		div.menu a:hover{
+			width: 300px;
+			background-color: darkgrey;
+			transition: 1s;
+			color: black;
+		}
+		div.menu{
+			display: flex;
+		}
+		div.menu div{
+			padding-left: 50px;
+			color: black;
+		}
+	</style>
+</head>
+
+<body>
+	<div style="width: 300px; margin: auto">
+		<h1 class="c1">PABLO</h1>
+		
+		<h1 class="c2">PABLO</h1>
+	</div>
+	
+	<nav>
+		<ul>
+			<li><a href="#">ATRACTIVO</a></li>
+			<li><a href="#">DIVERTIDO</a></li>
+			<li><a href="#">ENCANTADOR</a></li>
+			<li><a href="#">AMOROSO</a></li>
+		</ul>
+	</nav>
+	
+	<div class="menu" style="width: 800px; margin: auto; ">
+		<ul>
+			<li><a href="#">Enlace 1</a></li>
+			<li><a href="#">Enlace 2</a></li>
+			<li><a href="#">Enlace 3</a></li>
+			<li><a href="#">Enlace 4</a></li>
+			<li><a href="#">Enlace 5</a></li>
+		</ul>
+
+		<div>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad facilis ea perferendis, laboriosam vel praesentium non explicabo dicta quam vitae doloribus illo soluta, similique molestias ipsum rerum dolorem optio. Modi. </p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero eius animi neque aliquam, aliquid sequi, alias sit pariatur dignissimos assumenda tenetur id iste laudantium reiciendis nobis! Tempora ab perspiciatis ad minima natus reprehenderit hic laboriosam eos veritatis distinctio voluptate dignissimos quaerat corrupti minus repudiandae expedita magni in, quidem quasi facilis. </p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia non inventore, magnam blanditiis dolore ab dolor eos corrupti ratione, odio rerum, sunt nemo dolores doloremque distinctio tempora, sed dignissimos eius! </p>
+		</div>
+	</div>
+</body>
+</html>

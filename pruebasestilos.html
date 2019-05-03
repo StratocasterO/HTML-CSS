@@ -1,0 +1,150 @@
+<head>
+	<link rel="shortcut icon" href="https://www.aceptaelreto.com/pub/problems/v004/14/st/statements/images/cuadradoImperfecto.png" type="image/png" />
+	<meta charset="UTF-8">
+	<title>Pruebas de estilo CSS</title>
+<style type="text/css">
+	body{
+		background: url(tweed.png);
+		background-color: rgba(0, 0, 0, .5);
+		background-size: 150px 150px;
+	}
+
+	/*********************** estilos para los cuadros de texto ***********************/
+
+	div{
+		background: gray;
+		height: 300px;
+		width: 300px; 
+		margin-bottom: 25px;
+		margin-right: 25px;
+		padding: 15px;
+		display: inline-flex;					/* para que queden en la misma linea */
+		align-items:center;						/* para centrar el contenido verticalmente */
+		vertical-align: top;					/* para que se alineen arriba en cada línea */
+		box-sizing: border-box;					/* para que el padding no se añada al tamaño de la caja */
+	}
+	.round1{
+		border-radius: 20px 0px 20px 0px
+	}	
+	.round2{
+		border-radius: 0px 20px 0px 20px
+	}
+	.shadow1{
+		box-shadow: 10px 10px 0px black
+	}
+	.shadow2{
+		box-shadow: 10px 10px 10px black
+	}
+	.left{
+		text-align: left;
+	}
+	.right{
+		text-align: right;
+	}
+	.centre{
+		text-align: center;
+	}
+	.just{
+		text-align: justify;
+	}
+
+	/*********************** estilos para las tipografías ***********************/
+
+	.doble{
+		border-top: darkorange 1px solid;
+		border-bottom: darkorange 1px solid;
+		color: darkorange;
+	}
+	.naranja{
+		color: #5B3A22;
+		font-weight: bold;
+	}
+	.resaltado{
+		background-color: lightgrey;
+		color: #18672B;
+		padding-right: 1px;
+		padding-left: 1px;
+	}
+	.importante{
+		font-weight: bold;
+		font-style: italic;
+		font-size: 120%;
+		color: #146E51;
+	}
+	.capital p:first-letter{				/* primera letra mayúscula grande */
+		font-size: 2rem;
+		color: #222222;
+	}
+	.versa{									/* versalitas */
+		font-variant: small-caps;			
+	}
+
+	/*********************** estilos para los bordes ***********************/
+
+	.borde{
+		border-image: url('https://pablomonteserin.com/curso/assets/mundo.svg');
+		border-style: solid;
+		border-width: 20px;
+	}
+	.borde2{
+		border-image: url('https://pablomonteserin.com/curso/assets/border.png') 30 30 stretch;
+		border-style: solid;
+		border-width: 20px;
+	}
+	.borde3{
+		border-image: url('https://pablomonteserin.com/curso/assets/border.png') 30 30 round;
+		border-style: solid;
+		border-color: transparent;
+		border-width: 20px;
+	}
+</style>
+</head>
+
+<body>
+	<div class="round1 left capital"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi ullam hic mollitia fuga dolore similique, excepturi explicabo magni voluptatem accusantium delectus quisquam, vel laboriosam enim, quo totam, quaerat! Tempora, reiciendis?</p></div>
+
+	<div class="round1 right capital"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate perferendis dolor aut vero eligendi delectus, impedit ab dolore deleniti asperiores. Exercitationem ad natus sed iste perferendis repellat aliquid expedita, assumenda!</p></div>
+
+	<div class="round2 centre capital"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi dicta animi suscipit rerum totam voluptate quia in ut facilis a. Inventore error, nam facilis voluptatem qui, tempore! Velit, consequatur, vel.</p></div>
+
+	<div class="round2 just capital"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi dicta animi suscipit rerum totam voluptate quia in ut facilis a. Inventore error, nam facilis voluptatem qui, tempore! Velit, consequatur, vel.</p></div>
+
+	<div class="just versa" style="border-radius: 10px 20px 30px 40px;line-height: 1.5rem">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque sed quisquam assumenda, sit repellat odit suscipit cum iste. Minus beatae fugit impedit ut, dignissimos, reiciendis id aliquid earum aperiam atque.</div><br>
+
+
+
+	<div class="shadow1 left">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto porro perspiciatis animi esse nihil repellat, dolor facilis accusamus voluptatum id adipisci facere qui ut pariatur est. Velit neque nam eos.</div>
+
+	<div class="shadow1 right" style="box-shadow: 10px 10px 5px black">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex maxime incidunt labore vero error, dolor, consequuntur reprehenderit culpa sequi animi sunt odio, debitis omnis modi recusandae aperiam nemo amet officia.</div>
+
+	<div class="shadow2 centre">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia ratione, explicabo laboriosam! Impedit, magnam. Rerum voluptatum, commodi dignissimos quas praesentium debitis facilis amet autem tempora, veniam laboriosam ducimus. Vero, sed.</div>
+
+	<div class="shadow2 just" style="box-shadow: 10px 10px 15px black">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus inventore quis aliquam repellendus delectus fuga. Ullam a, enim maiores quo numquam sed similique ut voluptates, aliquid, iusto quaerat nam inventore.</div>
+
+	<div class="shadow2 just" style="box-shadow: 10px 10px 20px black; line-height: 1.5em">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus inventore quis aliquam repellendus delectus fuga. Ullam a, enim maiores quo numquam sed similique ut voluptates, aliquid, iusto quaerat nam inventore.</div><br>
+
+
+
+	<div class="left borde"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, fugit vel <span class="importante">porro</span> deserunt itaque <span class="importante">tenetur</span> beatae maxime eius. Deleniti vel nulla minus aliquid cumque beatae, rem impedit magni ut voluptatem.</p></div>
+
+	<div class="right borde2"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. <span class="naranja">Nemo maiores vel</span>, nulla amet esse aspernatur sapiente aperiam maxime, provident rerum ullam sint incidunt blanditiis libero obcaecati, <span class="naranja">culpa fugiat</span> quaerat atque.</p></div>
+
+	<div class="centre borde3"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde <span class="resaltado">architecto</span> sapiente, <span class="resaltado">voluptatem</span> veniam, <span class="resaltado">quibusdam</span> fugiat ipsam ullam quam alias et doloremque dolorum est. Accusamus voluptate impedit error harum totam et.</p></div>
+
+	<div class="just" style="line-height: 1.5rem; border: 2px solid black"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus <span class="doble">consequatur</span>, neque <span class="doble">quibusdam</span>, blanditiis <span class="doble">perferendis</span>, <span class="doble">molestiae</span>, asperiores odit quo aspernatur dolorum tempora debitis esse quasi suscipit doloribus nesciunt numquam iste aliquid!</p></div>
+
+	<div class="just" style="line-height: 1.5rem; border: 2px dotted #323232"><p><span class="naranja">Lorem ipsum dolor</span> sit amet, consectetur adipisicing elit. <span class="doble">Ducimus consequatur</span>, neque quibusdam, blanditiis perferendis, molestiae, asperiores odit quo aspernatur dolorum <span class="resaltado">tempora debitis esse quasi suscipit</span> doloribus nesciunt numquam <span class="importante">iste aliquid!</span></p></div><br>
+
+
+
+	<div class="text left" style="color: white; background-color: black">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, fugit vel porro deserunt itaque tenetur beatae maxime eius. Deleniti vel nulla minus aliquid cumque beatae, rem impedit magni ut voluptatem.</div>
+
+	<div class="text right" style="color: white; background-color: rgba(0,0,0,.67);">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo maiores vel, nulla amet esse aspernatur sapiente aperiam maxime, provident rerum ullam sint incidunt blanditiis libero obcaecati, culpa fugiat quaerat atque.</div>
+
+	<div class="text centre" style="color: white; background-color: rgba(0,0,0,.33);"><span style="background-color: rgba(0,0,0,.55);">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde architecto sapiente, voluptatem veniam, quibusdam fugiat ipsam ullam quam alias et doloremque dolorum est. Accusamus voluptate impedit error harum totam et.</span></div>
+
+	<div class="text just" style="background: radial-gradient(circle,#3F3F3F,#C8C8C8);">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus consequatur, neque quibusdam, blanditiis perferendis, molestiae, asperiores odit quo aspernatur dolorum tempora debitis esse quasi suscipit doloribus nesciunt numquam iste aliquid!</div>
+
+	<div class="text just" style="background: linear-gradient(to bottom, #ffadad 0%,#ffc9a3 20%,#fcf7a1 40%,#8eed91 60%,#7ee5e2 80%,#cc94f7 100%); ">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus consequatur, neque quibusdam, blanditiis perferendis, molestiae, asperiores odit quo aspernatur dolorum tempora debitis esse quasi suscipit doloribus nesciunt numquam iste aliquid!</div><br>
+
+</body>

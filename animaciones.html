@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Amimaciones</title>
+	<meta charset="UTF-8">
+
+	<style>
+		body{
+			margin: 100px;
+		}
+		.barra_wrapper {
+			width: 500px;
+			height: 30px;
+			border: 1px solid black;
+			position: relative;
+		}
+		.barra {
+			height: 100%;
+			background: green;
+			animation: muevete 1s forwards;
+		}
+		.rojo {
+			height: 100%;
+			background: red;
+			animation: muevete 1s forwards;
+		}
+		.barrita {
+			background: url(https://pablomonteserin.com/curso/assets/corazon-mask.png);
+			background-size: auto 100%;
+			height: 100%;
+			position: absolute;
+			width: 100%
+		}
+		@keyframes muevete {		/* con keyframes se definen las animaciones */
+			from {
+				width: 0
+			}
+			to {
+				width: 75%
+			}
+		}
+	</style>
+</head>
+
+<body>
+
+	<div class="barra_wrapper">
+		<div class="barra">
+		</div>
+	</div>
+	<br>
+
+	<div class="barra_wrapper">
+		<div class="rojo">
+			<div class="barrita">
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>

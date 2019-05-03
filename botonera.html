@@ -1,0 +1,161 @@
+<style>
+@font-face{
+	font-family: flechas;
+	src: url(Arrows_tfb.ttf);		
+}
+ul{
+	list-style: none;
+}
+li{
+	text-decoration: none;
+	background-color: #A0A0A0;
+	border-radius: 5px;
+	border: 3px solid #3B3B3B;
+	width: 120px;
+	padding: 5px;
+	margin-top: 1px;
+	position: relative;
+	display: inline-block;
+}
+a{
+	text-decoration: none;
+	padding: 15px;
+	color: #515151;
+	font-family: Berlin Sans FB;
+	font-weight: bold;
+}
+li:hover{
+	background-color: #FF8484;
+}
+h1{
+	font-family: Arial;
+	margin-left: 40px;
+	margin-top: 30px;
+
+}
+li.hasChildren > a:after{
+	color: #515151;
+	content: "c";
+	font-family: flechas;
+	font-size: .8em;
+	position: absolute;
+	right: 15px;
+	top: 10px;
+}
+li.hasChildren ul{
+	margin:0;
+	padding: 0;
+	position:absolute;
+	display: none;
+}
+li.hasChildren:hover ul{
+	display: block;
+	left: -3px;
+    top: 35px;
+}
+li.hasChildren2 > a:after{
+	color: #515151;
+	content: "c";
+	font-family: flechas;
+	font-size: .8em;
+	position: absolute;
+	right: 15px;
+	top: 10px;
+}
+li.hasChildren2 ul{
+	margin:0;
+	padding: 0;
+	position:absolute;
+	opacity: 0;
+	overflow: hidden;
+}
+li.hasChildren2:hover ul{
+	opacity: 1;
+	left: -3px;
+    top: 35px;
+    transition: 1.5s;
+}
+li.hasChildren3 > a:after{
+	color: #515151;
+	content: "c";
+	font-family: flechas;
+	font-size: .8em;
+	position: absolute;
+	right: 15px;
+	top: 10px;
+}
+li.hasChildren3 ul{
+	margin: 0;
+	padding: 0;
+	position:absolute;
+	overflow: hidden;
+	max-height: 0;
+}
+li.hasChildren3:hover ul{
+	max-height: 800px;
+	left: -3px;
+    top: 35px;
+    transition: 1.5s;
+}
+li.hasChildren4 > a:after{
+	color: #515151;
+	content: "c";
+	font-family: flechas;
+	font-size: .8em;
+	position: absolute;
+	right: 15px;
+	top: 10px;
+}
+li.hasChildren4 ul{
+	margin: 0;
+	padding: 0;
+	position:absolute;
+	overflow: hidden;
+	max-height: 0;
+	opacity: 0;
+}
+li.hasChildren4:hover ul{
+	max-height: 800px;
+	opacity: 1;
+	left: -3px;
+    top: 35px;
+    transition: 1.5s;
+}
+</style>
+
+<h1>M e n u</h1>
+<ul>
+	<li  class="hasChildren"><a href="#">Ixamad</a>
+		<ul>
+			<li><a href="#">Home</a></li>
+			<li><a href="#">Job</a></li>
+			<li><a href="#">Education</a></li>
+			<li><a href="#">Experience</a></li>
+		</ul>
+	</li>
+	<li class="hasChildren2"><a href="#">Natàlia</a>
+		<ul>
+			<li><a href="#">Home</a></li>
+			<li><a href="#">Job</a></li>
+			<li><a href="#">Education</a></li>
+			<li><a href="#">Experience</a></li>
+		</ul>
+	</li>
+	<li class="hasChildren3"><a href="#">Omar</a>
+		<ul>
+			<li><a href="#">Home</a></li>
+			<li><a href="#">Job</a></li>
+			<li><a href="#">Education</a></li>
+			<li><a href="#">Experience</a></li>
+		</ul>
+	</li>
+	<li class="hasChildren4"><a href="#">Pablo</a>
+		<ul>
+			<li><a href="#">Home</a></li>
+			<li><a href="#">Job</a></li>
+			<li><a href="#">Education</a></li>
+			<li><a href="#">Experience</a></li>
+		</ul>
+	</li>
+	<li><a href="#">Xavi</a></li>
+</ul>

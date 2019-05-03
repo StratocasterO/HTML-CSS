@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="shortcut icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRa74357xj7hIdIsHmwBzLROigRp0Cg0H59mufh9PCV9loaAeXJWA" type="image/png" />
+	<meta charset="UTF-8">
+	<title>Curso HTML5</title>
+	<link rel="stylesheet" type="text/css" href="estilocurso.css"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+</head>
+
+<body>
+	<div class="barra">
+		<div class="cont">
+			<h1 style="font-family: Verdana">Curso HTML5 </h1>
+			<p style="font-family: verdana">Tàdel Formació</p>
+		</div>
+	</div>
+	<br>
+	<br>
+
+	<div class="cont">
+		<h3 id="indice">Índice</h3>
+		<ul>
+			<li><a href="#contacto">Contacto y enlaces al curso</a></li>
+			<li><a href="#recursos">Recursos HTML5</a></li>
+			<li><a href="#css">Recursos CSS</a></li>
+			<li><a href="#otros">Otros recursos</a></li>
+			<li><a href="#estructura">Estructura básica de un documento HTML5</a></li>
+			<li><a href="#elementos">Párrafos, enlaces, listas, imágenes y documentos incrustados</a></li>
+			<li><a href="#ph">Textos e imágenes de prueba (placeholders)</a></li>
+			<li><a href="#atributos">Atributos de las etiquetas</a></li>
+			<li><a href="#estilos">Bloques y estilos</a></li>
+			<li><a href="#posicion"><i>Display</i> y posicionamiento</a></li>
+			<li><a href="#responsive">Webs adaptativas (<i>responsive</i>)</li>
+			<li><a href="#bootstrap">HTML5 con Bootstrap</li>
+			<li><a href="#prueba">Pruebas y ejercicios</a></li>
+		</ul><br>
+		
+		<h3 id="contacto">Contacto y enlaces al curso</h3>
+		<p>
+			<a href="http://certificats.tadelformacio.com">Accés a la formació online de Tàdel Formació</a><br>
+			<a href="https://pablomonteserin.com/curso/html5/">Curso HTML de Pablo Monteserín</a><br>
+			<a href="http://pablomonteserin.com/termine">Aplicación Terminé (para clase)</a><br>
+			<a href="mailto:pablomonteserin@pablomonteserin.com">pablomonteserin@pablomonteserin.com</a>
+		</p><br>
+		
+		<p><a href="#indice">Volver al índice</a></p><br>
+		
+		<h3 id="recursos">Recursos HTML5</h3>
+		<p>
+			<a href="https://www.sublimetext.com/">Sublime text</a>: editor de código (plugins usados: Package control, img-placeholder, ColorPicker, AutoFileName, Emmet) <br>
+			<a href="https://www.freeformatter.com/html-escape.html">Free formater</a>: escapador de texto <br>
+			<a href="https://stackoverflow.com/">Stack Overflow</a>: foro de dudas de programación <br>
+			<a href="https://validator.w3.org/">w3c Code Validator</a>:	validador de código de W3C <br>
+			<a href="https://www.w3schools.com/">w3c Schools</a>: cursos de W3C <br>
+			<a href="https://www.freecodecamp.org/">Free Code Camp</a>:	página con ejercicios de código
+		</p><br>
+		
+		<p><a href="#indice">Volver al índice</a></p><br>
+		
+		<h3 id="css">Recursos CSS</h3>
+		
+		<p>
+			<a href="http://www.csszengarden.com/">CSS Zen Garden</a>:		ejemplos de páginas de estilo <br>
+			<a href="http://apps.eky.hk/css-triangle-generator/">CSS Triangle Generator</a>:		generador de triángulos <br> 
+			<a href="http://www.colorzilla.com/gradient-editor/">Colorzilla</a>: generador de degradados <br><br>
+
+			<a href="https://flexboxfroggy.com/#es">Flexbox Froggy</a>: minijuego de <i>display: flex</i><br>
+			<a href="https://flukeout.github.io/">CSS Dinner</a>: minijuego de selectores CSS<br>
+			<a href="https://cssgridgarden.com/#es">Grid Garden</a>: minijuego de <i>display: grid</i><br>
+		</p><br>
+		
+		<p><a href="#indice">Volver al índice</a></p><br>
+		
+		<h3 id="otros">Otros recursos</h3>
+		
+		<p>
+			<a href="https://www.bluevertigo.com.ar/">Blue Vertigo</a>:  directorio de webs con contenido gratuito (imágenes, textos, audios, etc)<br>
+			<a href="https://i.emezeta.com/weblog/html5-cheatsheet/html5-cheatsheet-emezeta.pdf">Cheatsheet HTML5</a><br>
+			<a href="https://i.emezeta.com/weblog/css3-cheatsheet/css3-cheatsheet-emezeta.pdf">Cheatsheet CSS3</a><br>
+			<a href="https://hackerthemes.com/bootstrap-cheatsheet/">Cheatsheed Bootstrap 4</a><br>
+			<a href="https://pablomonteserin.com/presu">Página para estimar presupuestos de creación de webs</a><br>
+		</p><br>
+		
+		<p><a href="#indice">Volver al índice</a></p><br>
+		
+		<h3 id="estructura">Estructura básica de un documento HTML5</h3>
+		<p>
+			La estructura básica de un documento HTML5 es la siguiente:
+		</p>
+		<pre>
+			<div class="code">
+<code>&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+	&lt;head&gt;
+		&lt;meta charset=&quot;UTF-8&quot;&gt;
+		&lt;title&gt;Document&lt;/title&gt;
+	&lt;/head&gt;
+	&lt;body&gt;
+	&lt;/body&gt;
+&lt;/html&gt;</code>
+			</div>
+		</pre>
+		
+		<p>
+			La etiqueta <i>head</i> contiene toda la configuración del archivo: título e icono en la pestaña del navegador, conjunto de caracteres, etc. La etiqueta <i>body</i> contiene el cuerpo del documento.
+		</p>
+		<p>
+			Los comentarios en un documento HTML se escriben dentro de <i>&lt;!-- comentario --&gt;</i>. <br>Dentro de una etiqueta o en un documento CSS, se escriben dentro de <i>/* comentario */</i>.
+		</p>
+		<br>
+		
+		<p><a href="#indice">Volver al índice</a></p><br>
+		
+		<h3 id="elementos">Párrafos, enlaces, listas, imágenes y documentos incrustados</h3>
+		<p>
+			Contenido.
+		</p>
+		
+		<br><p><a href="#indice">Volver al índice</a></p><br>
+		
+		<h3 id="ph">Textos e imágenes de prueba (placeholders)</h3>
+		<p>
+			Los <i>placeholders</i> son imágenes y textos de prueba que se usan para visualizar una web mientras no tenemos las imágenes y texto definitivas.
+		</p>
+		<p>
+			Las imágenes suelen ser imágenes en gris y los textos <i>Lorem ipsum</i> son textos de prueba escritos en pseudo latín.
+		</p>
+		
+		<br><p><a href="#indice">Volver al índice</a></p><br>
+		
+		<h3 id="atributos">Atributos de las etiquetas</h3>
+		<p>
+			Contenido.
+		</p>
+		
+		<br><p><a href="#indice">Volver al índice</a></p><br>
+		
+		<h3 id="estilos">Bloques y estilos</h3>
+		<p>
+			Bloques con <i>div</i>.
+		</p>
+		
+		<p>
+			Estilos en línea con <i>style=""</i>.
+		</p>
+		
+		<p>
+			Sombras con <i>style="text-shadow: desplazamiento_x desplazamiento_y desenfoque color"</i>.
+		</p>
+		
+		<p style="text-shadow: 3px 3px 5px black;padding-left: 50px">
+			Texto sombreado
+		</p>
+		
+		<p>
+			Fuentes:
+		</p>
+		
+		<p class="fuente" style="padding-left: 50px">
+			Esto es un texto con una fuente importada de un archivo
+		</p>
+		<p style="padding-left: 50px;font-family: 'Indie Flower'">
+			Esto es un texto con una fuente importada de una URL
+		</p>
+		
+		<p>
+			Insertar iconos con <a href="https://fontawesome.com/">Font Awesome</a>:
+		</p>
+		
+		<p style="padding-left: 50px; font-size: 35px;margin-block-start: 16px;margin-block-end: 16px;">
+			<a href="http://www.youtube.com/omarolmedoferrer"><i class="fab fa-youtube"></i></a>    <a href="http://www.instagram.com/stratocaster_o"><i class="fab fa-instagram"></i></a>    <a href="http://www.twitter.com/stratocaster_o"><i class="fab fa-twitter"></i></a>
+		</p>
+		<p>
+			Cambiar formato con <i>hover</i>:
+		</p>
+		
+		<div class="cambio"><br>
+			Este cuadro de texto cambia de color al pasar el ratón por encima
+		</div>
+		
+		<p>Cambiar los estilos tipográficos con <i>span</i>, haciendo una <i>class</i> para cada estilo:</p>
+		
+		<p style="padding-left: 50px"><span class="i">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span> <br><span class="ul">Dolorem ratione voluptatem, aperiam praesentium non unde, velit,</span> <br><span class="b">eaque cumque consectetur saepe ducimus sit, possimus numquam.</span> <br><span class="vers">Quibusdam distinctio error sint, itaque pariatur.</span></p>
+		
+		<p>Hay bloques <i>&lt;div&gt;</i> específicos para contenido específico: <i>&lt;header&gt;, &lt;footer&gt;, &lt;main&gt;, &lt;article&gt;, &lt;aside&gt;, &lt;form&gt; y &lt;nav&gt;</i>.</p>
+		
+		<br><p><a href="#indice">Volver al índice</a></p><br>
+		
+		<h3 id="posicion"><i>Display</i> y posicionamiento</h3>
+		<p>
+			Display: block, inline-block, inline, flex, grid.
+		</p>
+		
+		<p>
+			Position: relative, absolute, fixed, sticky.
+		</p><br>
+		
+		<p><a href="#indice">Volver al índice</a></p><br>
+		
+		<h3 id="responsive">Webs adaptativas (<i>responsive</i>)</h3>
+		<p>
+			Las webs <i>responsive</i> o adaptativas son las que cambian su estilo CSS según la resolución y las proporciones de la pantalla.
+		</p><br>
+		
+		<p><a href="#indice">Volver al índice</a></p><br>
+
+		<h3 id="bootstrap">HTML5 con Bootstrap</h3>
+		<p>
+			<a href="https://getbootstrap.com/">Bootrstrap</a> es un recurso que sirve para maquetar con clases definidas en una hoja de estilos externa en lugar de con una hoja de estilos propia. Los estilos se implementan asignando las clases correspondientes a los objetos.
+		</p>
+		<p>
+			Container, container-fluid, row, col.
+		</p>
+		<p>
+			Ancho de las columnas con col-<i>n</i> (tienen que sumar 12). <br>
+			Márgenes y paddings con m-<i>n</i>, mt-<i>n</i>, mb-<i>n</i>, p-<i>n</i>, pt-<i>n</i>, pb-<i>n</i>, etc. <i>n</i> va de 1 a 5, siendo equivalente a 4, 8, 16, 24 y 48 px respectivamente.
+		</p>
+		<p>
+			Se puede hacer una web adaptativa fijando el ancho de las columnas para cada tamaño de pantalla: extrasmall (sin sufijo), small (-sm), medium (-md), large (-lg) y extralarge (-xl). Los anchos de página correspondientes son menor de 576 y mayor de 576, 768, 992 1200 px respectivamente.
+		</p>
+
+		<br>
+		
+		<p><a href="#indice">Volver al índice</a></p><br>
+
+		<h3 id="prueba">Pruebas y ejercicios</h3>
+		<p>
+			<a href="pruebashtml5.html">Archivo de pruebas</a><br>
+			<a href="pruebasestilos.html">Archivo de pruebas de estilo</a><br><br>
+
+			<a href="pruebanoticias.html">Maquetación de noticias</a><br>
+			<a href="pruebamaquetacion.html">Maquetación de un cuadro con imágenes</a><br>
+			<a href="pruebamargenes.html">Maquetación con márgenes y <i>overflow</i></a><br>
+			<a href="maquetacionhorizontal.html">Maquetación horizontal</a><br>
+			<a href="maquetacionhorizontalflex.html">Maquetación horizontal usando <i>flex</i></a><br>
+			<a href="maquetacioncolumnas.html">Maquetación con columnas</a><br>
+			<a href="florencia.html">Maquetación con indentación de imágenes</a><br>
+			<a href="pruebaweb.html">Maquetación de una web simple</a><br>
+			<a href="ventanas.html">Maquetación con <i>block</i>, <i>flex</i> y <i>float</i></a><br>
+			<a href="ventanalink.html">Maquetación de enlaces con <i>flex</i> y <i>hover</i></a><br>
+			<a href="panteon.html">Maquetación de varios cuadros de texto con <i>flex</i></a><br>
+			<a href="maquetacionselectores.html">Maquetación con selectores</a><br>
+			<a href="positionhover.html">Maquetación de capas con hover y posición relativa</a><br>
+			<a href="hover.html">Aparición de un elemento al pasar el ratón por encima</a><br>
+			<a href="galeriafotos.html">Animación de fotos al pasar el pasar el ratón por encima</a><br>
+			<a href="botonera.html">Botonera para un menú con enlaces, interacción y animaciones</a><br><br>
+
+			<a href="VUIT/index.html">Ejemplo de web maquetada: VUIT</a><br>
+			<a href="grass/index.html">Ejemplo de web maquetada: GrassyGreen</a><br>
+			<a href="autopista/index.html">Ejemplo de web maquetada: Autopista</a><br>
+			<a href="snapshot/index.html">Ejemplo de web maquetada: Snapshot (<i>sin acabar</i>)</a><br>
+			<a href="examen1/examen1.html">Ejemplo de web maquetada: Primera prueba</a><br><br>
+
+
+			<a href="gridlayout.html">Maquetado usando <i>display: grid</i></a><br>
+			<a href="gridbloques.html">Ejercicio de posicionamiento con <i>display: grid</i></a><br>
+			<a href="checkboxes.html">Ejercicio con <i>checkboxes</i> ocultas</a><br>
+			<a href="videoyaudio.html">Ejercicio de inserción de vídeo y audio con diferentes atributos</a><br>	
+			<a href="formulario.html">Maquetación de formularios</a><br>
+			<a href="transiciones.html">Maquetación de elementos con transiciones</a><br>
+			<a href="animaciones.html">Animaciones hechas con transiciones</a><br><br>
+
+			<a href="Bootstrap/pruebabootstrap.html">Archivo de pruebas de Bootstrap</a><br>
+			<a href="Bootstrap/maquetacionbootstrap.html">Ejercicios de Bootstrap</a><br>
+			<a href="Bootstrap/Bootstrapresponsive.html">Ejercicios de Bootstrap adaptativo</a><br>
+			<a href="Bootstrap/carousel.html">Carousel de imágenes</a><br>
+			<a href="Bootstrap/landing/index.html">Ejemplo de web maquetada con Bootstrap: Cursos Pablo</a><br>
+
+		</p>
+		
+		<p><a href="#indice">Volver al índice</a></p><br>
+
+		<p style="font-size: .8em; padding: 0">© 2019 - Omar Olmedo Ferrer</p>
+	</div>
+</body>
+</html>

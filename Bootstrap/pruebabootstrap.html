@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+	<title>Bootstrap 4</title>
+</head>
+<body>
+
+	<div class="container-fluid mb-4" style="border: 2px solid black"> <!-- la clase mb-5 aplica el estilo margin-bottom -->
+	Esto es un contenedor fluido.</div>
+
+	<div class="container mb-4"  style="border: 2px solid black">
+		<p>Esto es un contenedor normal de 1140px de ancho.</p>
+		<span style="color:darkred">Todas las <i>row</i> de Bootstrap tienen 12 unidades de ancho y las <i>col</i> que incluyan tienen que sumar 12 unidades de ancho. Si no se especifica, se reparten las 12 unidades entre todas las columnas.</span>
+	</div>
+
+	<div class="container  mb-4">
+		<div class="row">
+			<div class="col" style="border: 2px solid black">Columna sin ancho definido (se reparten a 4 unidades)</div>
+			<div class="col" style="border: 2px solid black">Columna sin ancho definido (se reparten a 4 unidades)</div>
+			<div class="col" style="border: 2px solid black">Columna sin ancho definido (se reparten a 4 unidades)</div>
+		</div>
+
+		<div class="row">
+			<div class="col-2" style="border: 2px solid black">Columna de ancho 2 unidades</div>
+			<div class="col-4" style="border: 2px solid black">Columna de ancho 4 unidades</div>
+			<div class="col-6" style="border: 2px solid black">Columna de ancho 6 unidades</div>
+		</div>
+
+		<div class="row">
+			<div class="col-5" style="border: 2px solid black">Columna de ancho 5 unidades</div>
+			<div class="col-5" style="border: 2px solid black">Columna de ancho 5 unidades</div>
+			<div class="col-2" style="border: 2px solid black">Columna de ancho 2 unidades</div>
+		</div>
+	</div>
+
+	<div class="container" style="background-color: lightgrey">
+		<div class="row mb-1" style="border: 2px solid black; background-color: white"> Fila con mb-1, equivalente a 4 px</div>
+		<div class="row mb-2" style="border: 2px solid black; background-color: white"> Fila con mb-2, equivalente a 8 px</div>
+		<div class="row mb-3" style="border: 2px solid black; background-color: white"> Fila con mb-3, equivalente a 16 px</div>
+		<div class="row mb-4" style="border: 2px solid black; background-color: white"> Fila con mb-4, equivalente a 24 px</div>
+		<div class="row mb-5" style="border: 2px solid black; background-color: white"> Fila con mb-5, equivalente a 48 px</div>
+		<div class="row mb-" style="border: 2px solid black; background-color: white"> Fila final</div>
+	</div>
+
+</body>
+</html>

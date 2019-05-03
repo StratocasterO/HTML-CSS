@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Armonización de escalas</title>
+
+	<style>													
+		*{
+			font-family: arial;
+			margin: 0px;
+		}
+		h1{
+			background-color: #4F4F4F;
+			text-align: left;
+			color: white;
+			padding: 5px;
+			padding-left: 10px;
+			font-size: 2em;
+		}
+		h2{
+			background-color: #8D8D8D;
+			text-align: right;
+			color: white;
+			padding: 5px;
+			padding-right: 10px;
+			font-weight: lighter;
+			border-bottom: 3px dashed #D4D4D4;
+			font-size: 1em;
+			margin-bottom: 15px;
+		}
+		h3{
+			text-align: center;
+			background-color: #A9A9A9;
+			padding: 15px;
+			margin-bottom: 5px;
+		}
+		h4{
+			background-color: #D4D4D4;
+			color: black;
+		}
+		sup{
+			font-size: .6em;
+		}
+		.cont{
+			margin: auto;
+			width: 1024px;
+			display: flex;
+			flex-direction: row;
+		}
+		.col{
+			width: 22%;
+			display: flex;
+			border-right: 3px dashed #4F4F4F;
+			border-left: 3px dashed #4F4F4F;
+			text-align: center;
+			margin: 10px;
+			padding-right: 10px;
+			padding-left: 10px;
+			color: white;
+			vertical-align: top;
+			flex-direction: column;
+			justify-content: space-between;
+		}
+		.box{
+			border: 2px dotted #4F4F4F;
+			margin-bottom: 5px;
+			display: flex;
+			flex-direction: column;
+		}
+		.boxf{
+			margin-bottom: 0px;
+		}
+		.box p{
+			color: black;
+		}
+		.chord{
+			color: black;
+			font-size: 2em;
+		}
+	</style>
+</head>
+
+<body>
+	<h1>
+		Acordes y modos de cada escala musical
+	</h1>
+	<h2>
+		Omar Olmedo Ferrer
+	</h2>
+	<div class="cont">
+		<div class="col">		
+			<h3>Mayor</h3>
+			<div class="box"><h4>I</h4><p class="chord">I<sup>maj7</sup></p><p>Jónico</p></div>			
+			<div class="box"><h4>II</h4><p class="chord">II<sup>-7</sup></p><p>Dórico</p></div>
+			<div class="box"><h4>III</h4><p class="chord">III<sup>-7</sup></p><p>Frigio</p></div>
+			<div class="box"><h4>IV</h4><p class="chord">IV<sup>maj7</sup></p><p>Lidio</p></div>
+			<div class="box"><h4>V</h4><p class="chord">V<sup>7</sup></p><p>Mixolidio</p></div>
+			<div class="box"><h4>VI</h4><p class="chord">VI<sup>-7</sup></p><p>Eólico</p></div>
+			<div class="box boxf"><h4>VII</h4><p class="chord">VII<sup>-7(&#9837;5)</sup></p><p>Locrio</p></div>
+		</div>
+		<div class="col">
+			<h3>Menor natural</h3>
+			<div class="box"><h4>I</h4><p class="chord">I<sup>-7</sup></p><p>Eólico</p></div>			
+			<div class="box"><h4>II</h4><p class="chord">II<sup>-7(&#9837;5)</sup></p><p>Locrio</p></div>
+			<div class="box"><h4>&#9837;III</h4><p class="chord">&#9837;III<sup>maj7</sup></p><p>Jónico</p></div>
+			<div class="box"><h4>IV</h4><p class="chord">IV<sup>-7</sup></p><p>Dórico</p></div>
+			<div class="box"><h4>V</h4><p class="chord">V<sup>-7</sup></p><p>Frigio</p></div>
+			<div class="box"><h4>&#9837;VI</h4><p class="chord">&#9837;VI<sup>maj7</sup></p><p>Lidio</p></div>
+			<div class="box boxf"><h4>&#9837;VII</h4><p class="chord">&#9837;VII<sup>-7</sup></p><p>Mixolidio</p></div>
+		</div>
+		<div class="col">
+			<h3>Menor melódica</h3>
+			<div class="box"><h4>I</h4><p class="chord">I<sup>-maj7</sup></p><p>Menor melódica</p></div>			
+			<div class="box"><h4>II</h4><p class="chord">II<sup>-7</sup></p><p>Dórico &#9837;9</p></div>
+			<div class="box"><h4>&#9837;III</h4><p class="chord">&#9837;III<sup>+maj7</sup></p><p>Lidio aumentado</p></div>
+			<div class="box"><h4>IV</h4><p class="chord">IV<sup>7</sup></p><p>Lidio dominante</p></div>
+			<div class="box"><h4>V</h4><p class="chord">V<sup>7</sup></p><p>Mixolidio &#9837;13</p></div>
+			<div class="box"><h4>VI</h4><p class="chord">VI<sup>-7(&#9837;5)</sup></p><p>Locrio &#9839;9</p></div>
+			<div class="box boxf"><h4>VII</h4><p class="chord">VII<sup>-7(&#9837;5)</sup></p><p>Alterada</p></div>
+		</div>
+		<div class="col">
+			<h3>Menor armónica</h3>
+			<div class="box"><h4>I</h4><p class="chord">I<sup>-maj7</sup></p><p>Menor armónica</p></div>
+			<div class="box"><h4>II</h4><p class="chord">II<sup>-7(&#9837;5)</sup></p><p>Locrio &#9839;13</p></div>
+			<div class="box"><h4>&#9837;III</h4><p class="chord">&#9837;III<sup>+maj7</sup></p><p>Aumentada</p></div>
+			<div class="box"><h4>IV</h4><p class="chord">IV<sup>-7</sup></p><p>Dórico &#9839;9</p></div>
+			<div class="box"><h4>V</h4><p class="chord">V<sup>7</sup></p><p>Frigio dominante</p></div>
+			<div class="box"><h4>&#9837;VI</h4><p class="chord">&#9837;VI<sup>maj7</sup></p><p>Lidio &#9839;9</p></div>
+			<div class="box boxf"><h4>VII</h4><p class="chord">VII<sup>o</sup></p><p>Locrio &#9837;11 &#9838;7</p></div>
+		</div>
+	</div>
+</body>
+</html>
+
+<!--   bemol &#9837;   sostenido &#9839;   becuadro &#9838;  -->

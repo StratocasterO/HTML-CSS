@@ -1,0 +1,49 @@
+<style>
+	input[type="checkbox"]{
+		display: none;
+	}
+	input#pulsable:checked + .texto{
+		background: pink;
+	}
+
+
+	input#spoiler{
+		display: none;
+	}
+	label#hp{
+		background: pink;
+		cursor: pointer;
+	}
+	input[type="checkbox"] + label + .hidden {
+		opacity: 0;
+	}
+	input[type="checkbox"]:checked + label + .hidden {
+		opacity: 1;
+	}
+
+	input[type="checkbox"]#mola + label{
+		display: inline-block;
+		width: 19px;
+		height: 19px;
+		background: url(https://pablomonteserin.com/curso/assets/check_radio_sheet.png);
+		cursor: pointer;
+	}
+	input[type="checkbox"]#mola:checked + label{
+		background: url(https://pablomonteserin.com/curso/assets/check_radio_sheet.png) -19px top;
+	}
+</style>
+
+<label for="pulsable">pulsable</label>
+<input id="pulsable" type="checkbox">
+<span class="texto">amor</span>
+
+<br><br>
+
+<input type="checkbox" id="spoiler">
+<label id="hp" for="spoiler">Harry Potter y el Príncipe Mestizo</label>
+<div class="hidden">Dumbledore muere al final</div>
+
+<br><br>
+
+<input type="checkbox" id="mola">
+<label for="mola"></label>

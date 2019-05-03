@@ -1,0 +1,207 @@
+@font-face{
+	font-family: fuente;
+	src:url(GamePlayed.otf)	
+}
+@font-face{
+	font-family: texto;
+	src:url(coolveticarg.ttf)	
+}
+*{
+	margin: 0;
+	padding: 0;
+	font-family: fuente;
+}
+header{
+	width: 100%;
+	background-color: #9D9B9C;
+	text-align: center;
+	border-bottom: 1px solid white;
+}
+header img{
+	max-width: 1600px;
+	width: 100%;
+}
+nav{
+	position: sticky;
+	top: 0;
+	background-color: #9D9B9C;
+}
+nav ul.menu{
+	max-width: 800px;
+	min-width: 380px;
+	width: 50%;
+	margin: auto;
+	display: flex;
+	flex-direction: row;
+	list-style: none;
+	justify-content: space-between;
+}
+nav li{
+	display: inline-block;
+	vertical-align: top;
+}
+nav a{
+	display: block;
+	padding: 10px 20px;
+	text-decoration: none;
+	color: white;
+}
+nav .sub ul{
+	display: flex;
+	flex-direction: column;
+	position: absolute;
+}
+nav .sub li{
+	display: none;
+}
+nav .sub ul li a{
+	display: block;
+	padding: 10px 20px;
+	text-decoration: none;
+	color: white;
+	background-color: #9D9B9C;
+	margin-left: 0px;
+}
+nav .sub:hover li{
+	display: block;
+	align-items: center;
+	margin-top: 3px;
+	top: 0;
+}
+.cont{
+	max-width: 1024px;
+	width: 100%;
+	margin: auto;
+	margin-top: 60px;
+}
+.text{
+	color: #606060;
+	padding: 0 150px;
+	padding-bottom: 60px;
+}
+.text p {
+	font-family: texto;
+	font-weight: normal;
+}
+.text a{
+	text-decoration: none;
+	color: #454545;
+	font-size: .8em;
+}
+footer{
+	width: 100%;
+	background-color: #9D9B9C;
+	text-align: center;
+	color: white;
+	padding: 30px 0;
+	margin-top: 30px;
+	font-size: .8em;
+}
+h2{
+	text-align: center;
+	color: #606060;
+	margin: 80px 0 30px 0;
+	text-shadow: 0 0 10px #B3B3B3;
+}
+h5{
+	color: #606060;
+	text-align: center;
+	margin-bottom: 5px;
+	font-size: 1em;
+}
+.ultimos{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+.card{
+	display: block;
+	text-align: center;
+	margin: 0 10px;
+	margin-bottom: 20px;
+	width: 220px;
+}
+.card img{
+	width: 200px;
+}
+.card p{
+	font-family: texto;
+	color: #606060;
+	padding: 10px 10px;
+	text-align: left
+}
+form{
+	display: flex;
+	flex-direction: column;
+	margin-top: 40px;
+}
+form *{
+	margin-bottom: 20px;
+	font-family: texto;
+	padding: 3px;	
+	padding-left: 10px;
+	color: #606060;
+}
+button{
+	background-color: #9D9B9C;
+	color: white;
+	border: none;
+	padding: 5px 0;
+}
+.juego{
+	text-align: center;
+	width: 100%;
+	padding: 20px;
+}
+@media screen and (max-width:1024px) {
+    .ultimos{
+	    display: grid;
+		grid-template-columns: 48% 48%;
+		align-content: center;
+		max-width: 500px;
+		margin: auto;
+    }
+    .text{
+		color: #606060;
+		max-width: 550px;
+		padding: 0 10px;
+		padding-bottom: 60px;
+		margin: auto;
+	}
+	.card img{
+		width: 100%;
+	}
+	.card{
+		width: auto;
+		margin: 0 20px;
+		margin-bottom: 20px;
+	}
+	.card p{
+	padding: 10px 0;
+	}
+}
+@media screen and (max-width:380px) {
+	nav ul.menu{
+		width: 100vw;
+		min-width: 0;
+		margin: auto;
+		display: flex;
+		flex-direction: row;
+		list-style: none;
+		justify-content: center;
+		font-size: .8em;
+	}
+	nav a{
+		display: block;
+		padding: 10px 15px;
+		text-decoration: none;
+		color: white;
+	}
+	nav ul.menu li:nth-child(2) a{
+		min-width: 100px;
+	}
+	p{
+		font-size: .8em
+	}
+}

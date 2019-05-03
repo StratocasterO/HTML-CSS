@@ -1,0 +1,107 @@
+<style>
+.title{
+	margin: auto;
+	margin-top: 250px;
+	width: 1300px;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+.cont{
+	margin: auto;
+	width: 1300px;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+.cont2{
+	width: 300px;
+}
+.ventana1{
+	height: 300px;
+	width: 400px;
+	border: 1px solid black;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+}
+.ventana2{
+	height: 300px;
+	width: 400px;
+	border: 1px solid black;
+}
+.ventana3{
+	height: 300px;
+	width: 400px;
+	border: 1px solid black;
+}
+.a1{
+	height: 300px;
+	width: 50px;
+	background-color: red;
+}
+.a2{
+	height: 50px;
+	width: 300px;
+	background-color: yellow;
+}
+.a3{
+	height: 200px;
+	width: 300px;
+	background-color: blue;
+}	
+.a4{
+	height: 50px;
+	width: 300px;
+	background-color: purple;
+}	
+.a5{
+	height: 300px;
+	width: 50px;
+	background-color: green;
+}	
+.block{
+	display: inline-block;
+}
+.float{
+	float: left;
+}
+</style>
+
+<div class="title">
+	<h1>Ventana con flex</h1>
+	<h1>Ventana con block</h1>
+	<h1>Ventana con float</h1>
+</div>
+<div class="cont">
+	<div class="ventana1">
+		<div class="a1"></div>
+		<div>
+			<div class="a2"></div>
+			<div class="a3"></div>
+			<div class="a4"></div>
+		</div>
+		<div class="a5"></div>
+	</div>
+
+	<div class="ventana2">
+		<div class="a1 block"></div
+			><div class="cont2 block">
+			<div class="a2 block"></div>
+			<div class="a3 block"></div>
+			<div class="a4 block"></div>
+		</div
+		><div class="a5 block"></div>
+	</div>
+
+	<div class="ventana3">
+		<div class="a1 float"></div>
+		<div class="cont2 float">
+			<div class="a2"></div>
+			<div class="a3"></div>
+			<div class="a4"></div>
+		</div>
+		<div class="a5 float"></div>
+	</div>
+
+</div>

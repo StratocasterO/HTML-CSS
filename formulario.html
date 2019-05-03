@@ -1,0 +1,106 @@
+<meta charset="UTF-8">
+
+<style>
+	textarea{
+		height: 150px;
+		width: 180px;
+	}
+	input[type="text"]{
+		width: 180px;
+		display: inline-block;
+	}
+	input:not([type="checkbox"]){
+		width: 180px;
+		display: inline-block;
+	}
+	input[required]{
+		border: 1px solid black;
+	}
+	form#valid input:valid{
+		background-color: palegreen;
+	}
+	form#valid input:invalid{
+		background-color: salmon;
+	}
+	label{
+		display: inline-block;
+		width: 200px;
+		margin-bottom: 10px;
+		vertical-align: top;
+	}
+	button{
+		margin-left: 120px;
+		width: 150px;
+	}
+	form{
+		margin: 100px 150px;
+		display: inline-block;
+	}
+	form#valid{
+		vertical-align: top;
+	}
+	input:invalid + img{
+		opacity: 0;
+	}
+	input:valid + img{
+		opacity: 1;
+	}
+</style>
+
+<form>
+	<h2>Formulario con <i>placeholder</i>:</h2>
+
+	<label for="user">Nombre:</label>
+	<input type="text" id="user" autofocus>
+	<br>
+	
+	<label for="mail">E-mail:</label>
+	<input type="text" placeholder="user@server.com" id="mail">
+	<br>
+	
+	<label for="comments">Comentarios:</label>
+	<textarea id="comments"></textarea>
+	<br>
+	
+	<label for="conditions">Acepto las condiciones:</label
+		><input type="checkbox">
+		<br>
+
+		<button>Enviar</button>
+	</form>
+
+	<form id="valid">
+		<h2>Formulario con campos requeridos y validación:</h2>
+
+		<label for="user">Nombre:</label>
+		<input type="text" required id="user">
+		<img src="https://pablomonteserin.com/curso/html5/ex/formularios/success.png" alt="Check">
+		<br>
+
+		<label for="age">Edad:</label>
+		<input type="number" required id="age">
+		<img src="https://pablomonteserin.com/curso/html5/ex/formularios/success.png" alt="Check">
+		<br>
+
+		<label for="postal" >Código postal:</label>
+		<input type="" required pattern="^[0-9]{5}$" id="postal"> <!-- pattern para fijar 5 dígitos del 0 al 9 -->
+		<img src="https://pablomonteserin.com/curso/html5/ex/formularios/success.png" alt="Check">
+		<br>
+
+		<label for="mail" >E-mail:</label>
+		<input type="" id="mail">
+		<img src="https://pablomonteserin.com/curso/html5/ex/formularios/success.png" alt="Check">
+		<br>
+
+		<label for="fecha" >Fecha de reserva:</label>
+		<input type="date" required id="fecha">
+		<img src="https://pablomonteserin.com/curso/html5/ex/formularios/success.png" alt="Check">
+		<br>
+
+		<label for="nota" >Nota:</label>
+		<input type="range" max="10" min="0" value="7" step="1" style="border: 1px solid black" id="nota"
+		><img src="https://pablomonteserin.com/curso/html5/ex/formularios/success.png" alt="Check">
+		<br>
+
+		<button>Enviar</button>
+	</form>

@@ -1,0 +1,183 @@
+@font-face{
+	font-family: fuente;
+	src:url(MontserratAlternates-Thin.otf)		
+}
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	font-family: fuente;
+	text-align: center;
+}
+nav{
+	width: 100vw;
+}
+nav ul{
+	list-style: none;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+nav li{
+	display: inline-block;
+}
+nav a{
+	text-decoration: none;
+	padding: 15px 30px;
+	color: black;
+	display: inline-block;
+}
+.submenu a{
+	text-decoration: underline;
+}
+li.submenu ul{
+	display: none;
+}
+li.submenu:hover ul{
+	display: block;
+	position: absolute;
+	z-index: 1;
+}
+li.submenu li{
+	display: block;
+	background-color: white;
+	margin-top: 3px;
+}
+li.submenu li a{
+	text-decoration: none;
+}
+nav img{
+	padding: 10px 50px;
+}
+.cabecera{
+	background-color: #02A8FE;
+	display: flex;
+	justify-content: center;
+}
+.cabecera img{
+	display: block;
+}
+.fondo{
+	width: 100%;
+	background: linear-gradient(#02A8FE,#FFFFFF);
+}
+.cont{
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin: auto;
+	width: 1024px;
+}
+h1{
+	color: lightgray;
+	text-shadow: black 0px 0px 10px;
+	padding: 30px 0;
+}
+.grid{
+	display: grid;
+	margin: auto;
+	grid-template-columns: 25% 25% 25% 25%;
+	grid-column-gap: auto;
+	justify-content: center;
+}
+.dark{
+	background-color: black;
+	border-radius: 15px;
+	margin: 15px 8px;
+	padding: 10px;
+	height: 325px;
+}
+.dark h3{
+	margin-top: 10px;
+	color: black; IMPORTANT!
+}
+.dark img{
+	width: 80%;
+	margin: 10px 0;
+}
+.dark p{
+	text-align: left;
+	font-size: .9em;
+	padding: 15px;
+}
+.dark:hover{
+	background-color: white;
+	color: grey;
+	transition: .3s;
+}
+.text{
+	color: gray;
+	text-align: left;
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+h2{
+	text-align: center;
+	color: black;
+	text-shadow: black 0px 0px 10px;
+	margin-bottom: 25px;
+}
+.text img{
+	float: left;
+	margin: 14px;
+	border-radius: 15px;
+	border: 1px solid black;
+}
+.text p{
+	margin-bottom: 1em;
+}
+span.cn{
+	font-style: italic;
+	font-weight: bold;
+	color: black;
+}
+span.an{
+	color: blue;
+	font-weight: bold;
+}
+form{
+	display: grid;
+	grid-template-columns: 50% 50%;
+	grid-template-rows: 50% 50%;
+	grid-row-gap: 15px;
+	grid-column-gap: 25px;
+	margin-bottom: 45px;
+}
+#mensaje{
+	grid-column: 2;
+	grid-row: 1/3;
+}
+#nombre{
+	grid-column: 1;
+}
+#correo{
+	grid-column: 1;
+}
+h4{
+	color: gray;
+	font-size: .8em;
+	margin-bottom: 30px;
+}
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+	font-size: 1em;
+	font-family: fuente;
+	color: #02A8FE;
+}
+::-moz-placeholder { /* Firefox 19+ */
+font-size: 1em;
+font-family: fuente;
+color: #02A8FE;
+}
+:-ms-input-placeholder { /* IE 10+ */
+font-size: 1em;
+font-family: fuente;
+color: #02A8FE;
+}
+:-moz-placeholder { /* Firefox 18- */
+font-size: 1em;
+font-family: fuente;
+color: #02A8FE;
+}

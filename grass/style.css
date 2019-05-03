@@ -1,0 +1,124 @@
+@font-face{
+	font-family: myfont;
+	src: url(fuente.woff);
+}
+body{
+	font-family: myfont;
+	margin: 0;
+}
+.line{
+	width: 100%;
+	margin: 0;
+}
+.menu{
+	background-color: rgba(22, 160, 133, 0.7);
+	position: fixed;
+	margin: 0;
+	text-align: center;
+}
+.menu ul{
+	margin: 0;
+	padding: 0;
+} 
+.menu li{
+	list-style: none;
+	display: inline-block;
+	text-align: center;
+}
+.menu ul li a{
+	text-decoration: none;
+	color: white;
+	padding: 25px;
+	display: block;
+	margin: 0 45px;
+}
+.header{
+	text-align: center;
+	padding: 170px 0;
+	background-color: #333333;
+	color: white;
+}
+.header h1{
+	font-size: 5em;
+	margin: 0;
+}
+.header p{
+	font-size: .8em;
+	margin: 0;
+}
+.grass{
+	height: 500px;
+	background-image: url(img/pic01.jpg);
+}
+.blanco{
+	background-color: white;
+}
+.cont{
+	width: 1024px;
+	margin: auto;
+}
+a{
+	color: black;
+}
+.col1{
+	display: inline-block;
+	width: 70%;
+	padding: 15px;
+	text-align: justify;
+	vertical-align: top;
+	box-sizing: border-box;
+}
+.col2{
+	display: inline-block;
+	width: 30%;
+	padding: 15px;
+	vertical-align: top;
+	box-sizing: border-box;
+}
+.col1 h2{
+	color: rgb(22, 160, 133);
+}
+.cont h2{
+	margin-bottom: 30px;
+}
+.cont h3{
+	font-size: .9em;
+}
+.col{
+	display: inline-block;
+	width: 33%;
+	padding: 15px 30px;
+	vertical-align: top;
+	box-sizing: border-box;
+	text-align: justify;
+}
+.gris{
+	background-color: #1E1B1A;
+	color: white;
+}
+.gris a{
+	color: #5C5C5C;
+}
+.gris h4{
+	font-size: 1.5em;
+	margin-top: 20px;
+}
+.footer{
+	background-color: #16A085;
+	text-align: center;
+}
+.footer h5{
+	margin: 0;
+	padding: 80px;
+	color: white;
+}
+.cont ul{
+	list-style: none;
+	padding: 0;
+}
+.cont ul li{
+	padding: 8px 0;
+}
+.icons img{
+	margin-right: 25px;
+}

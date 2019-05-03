@@ -1,0 +1,105 @@
+@font-face{
+	font-family: Roboto;
+	src:url(Roboto-Thin.ttf)		
+}
+*{
+	margin:0;
+	padding:0;
+}
+body{
+	background-image: url(img/header.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+	font-family: Roboto;
+}
+.header{
+	width: 100%;
+	background-color: rgba(0,0,0,.2);
+	position: fixed;
+	top: 0;
+}
+.header ul{
+	list-style: none;
+	text-align: center;
+}
+.header ul li{
+	display: inline-block;
+}
+.header ul li:not(:last-child) a{
+	border-right: 1px solid rgba(255,255,255,.5);
+}
+.header ul li a{
+	text-decoration: none;
+	color: white;
+	padding: 30px;
+	display: block;
+}
+.blanc{
+	width: 100%;
+	margin-top: 520px;
+	background-color: white;
+	color: #6D6D6D;
+}
+.cont{
+	width: 1024px;
+	margin: auto;
+	text-align: center;
+	overflow: hidden;		/* overflow hidden per arreglar el margin collapse */
+}
+.blanc p{
+	padding: 30px;
+	border-bottom: 2px solid #6D6D6D;
+}
+.cont2{
+	margin: 60px 0;
+}
+.col{
+	display: inline-block;
+	width: 33%;
+	vertical-align: top;
+}
+.col p{
+	border: none;
+}
+.col a{
+	color: white;
+	background-color: #60A065;
+	text-decoration: none;
+	display: inline-block;
+	padding: 10px 80px;
+}
+.cont3{
+	margin: 40px 0;
+	text-align: left;
+}
+.cont3 .col{
+	width: 50%;
+	display: inline-block;
+}
+.col img{
+	width: 500px;
+}
+.cont3 .col p{
+	padding: 0;
+}
+.trans2{
+	width: 100%;
+}
+.trans2 p{
+	font-size: 1.5em;
+	padding: 80px;
+	color: white;
+}
+.footer{
+	width: 100%;
+	background-color: #2D2D2D;
+	color: white;
+}
+.footer h2{
+	padding: 40px;
+}
+.footer p:last-child{
+	font-size: .8em;
+	padding: 20px;
+	padding-top: 40px;
+}
