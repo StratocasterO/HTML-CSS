@@ -40,11 +40,11 @@
 		vertical-align: top;
 	}
 	input:invalid + img{
-		opacity: 0;
+		display: none;
 	}
 	input:valid + img{
-		opacity: 1;
-	}
+		display: inline-block;
+}
 </style>
 
 <form>
@@ -74,32 +74,32 @@
 
 		<label for="user">Nombre:</label>
 		<input type="text" required id="user">
-		<img src="https://pablomonteserin.com/curso/html5/ex/formularios/success.png" alt="Check">
+		<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Light_green_check.svg/480px-Light_green_check.svg.png" width="10px" alt="Check">
 		<br>
 
 		<label for="age">Edad:</label>
 		<input type="number" required id="age">
-		<img src="https://pablomonteserin.com/curso/html5/ex/formularios/success.png" alt="Check">
+		<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Light_green_check.svg/480px-Light_green_check.svg.png" width="10px" alt="Check">
 		<br>
 
 		<label for="postal" >Código postal:</label>
 		<input type="" required pattern="^[0-9]{5}$" id="postal"> <!-- pattern para fijar 5 dígitos del 0 al 9 -->
-		<img src="https://pablomonteserin.com/curso/html5/ex/formularios/success.png" alt="Check">
+		<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Light_green_check.svg/480px-Light_green_check.svg.png" width="10px" alt="Check">
 		<br>
 
 		<label for="mail" >E-mail:</label>
 		<input type="" id="mail">
-		<img src="https://pablomonteserin.com/curso/html5/ex/formularios/success.png" alt="Check">
+		<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Light_green_check.svg/480px-Light_green_check.svg.png" width="10px" alt="Check">
 		<br>
 
 		<label for="fecha" >Fecha de reserva:</label>
 		<input type="date" required id="fecha">
-		<img src="https://pablomonteserin.com/curso/html5/ex/formularios/success.png" alt="Check">
+		<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Light_green_check.svg/480px-Light_green_check.svg.png" width="10px" alt="Check">
 		<br>
 
 		<label for="nota" >Nota:</label>
 		<input type="range" max="10" min="0" value="7" step="1" style="border: 1px solid black" id="nota"
-		><img src="https://pablomonteserin.com/curso/html5/ex/formularios/success.png" alt="Check">
+		><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Light_green_check.svg/480px-Light_green_check.svg.png" width="10px" alt="Check">
 		<br>
 
 		<button>Enviar</button>
