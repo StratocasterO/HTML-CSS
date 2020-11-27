@@ -68,12 +68,14 @@ li.hasChildren2 ul{
 	position:absolute;
 	opacity: 0;
 	overflow: hidden;
+	visibility: hidden;
 }
 li.hasChildren2:hover ul{
 	opacity: 1;
 	left: -3px;
     top: 35px;
     transition: 1.5s;
+	visibility: visible;
 }
 li.hasChildren3 > a:after{
 	color: #515151;
@@ -115,7 +117,7 @@ li.hasChildren4 ul{
 	opacity: 0;
 }
 li.hasChildren4:hover ul{
-	max-height: 800px;
+	max-height: 300px;
 	opacity: 1;
 	left: -3px;
     top: 35px;
